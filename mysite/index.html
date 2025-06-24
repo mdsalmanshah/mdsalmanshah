@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Salman Shah - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #e2e8f0;
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+      cursor: none;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      will-change: transform;
+    }
+    .custom-cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #facc15;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: all 0.1s ease;
+      z-index: 9999;
+    }
+    .custom-cursor.hovered {
+      transform: translate(-50%, -50%) scale(1.5);
+      background: rgba(250, 204, 21, 0.3);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px #facc15; }
+      50% { box-shadow: 0 0 20px #facc15, 0 0 30px #3b82f6; }
+      100% { box-shadow: 0 0 10px #facc15; }
+    }
+    @keyframes glowPulse {
+      0% { filter: drop-shadow(0 0 5px #facc15); }
+      50% { filter: drop-shadow(0 0 15px #facc15); }
+      100% { filter: drop-shadow(0 0 5px #facc15); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+    .container-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border: 2px solid transparent;
+      border-image: linear-gradient(45deg, #facc15, #3b82f6) 1;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto 20px;
+      transition: all 0.5s ease;
+    }
+    .container-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      animation: pulseGlow 2s infinite;
+    }
+    .container-card img {
+      border-radius: 10px;
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .container-card:hover img {
+      transform: scale(1.05);
+    }
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background: linear-gradient(90deg, #facc15, #3b82f6);
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #facc15, #3b82f6);
+      border-radius: 3px;
+    }
+    .profile-img {
+      border-radius: 50%;
+      border: 5px solid #facc15;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      animation: glowPulse 3s infinite ease-in-out;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    .action-button, .ripple-button {
+      position: relative;
+      overflow: hidden;
+      padding: 8px 16px;
+      background: #facc15;
+      color: #1e293b;
+      font-weight: 600;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
+    }
+    .action-button:hover, .ripple-button:hover {
+      background: #eab308;
+      transform: scale(1.05) rotate(2deg);
+    }
+    .action-button:active, .ripple-button:active {
+      animation: bounce 0.3s;
+    }
+    .action-button::after, .ripple-button::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1) translate(-50%, -50%);
+      transform-origin: center;
+    }
+    .action-button:active::after, .ripple-button:active::after {
+      animation: ripple 0.5s ease-out;
+    }
+    @keyframes ripple {
+      0% { transform: scale(0); opacity: 1; }
+      100% { transform: scale(40); opacity: 0; }
+    }
+    @media (max-width: 768px) {
+      .container-card {
+        max-width: 90%;
+        padding: 15px;
+      }
+      .profile-img {
+        width: 140px;
+        height: 140px;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .container-card img {
+        max-height: 150px;
+      }
+    }
+  </style>
+</head>
+<body class="hero-bg">
+  <div class="custom-cursor"></div>
+  <header class="flex justify-between items-center p-6 md:p-8 sticky top-0 bg-opacity-95 bg-gray-900 z-50">
+    <h1 class="text-2xl md:text-3xl font-bold text-white">MD Salman Shah</h1>
+    <nav>
+      <ul class="flex space-x-4 md:space-x-8">
+        <li><a href="#about" class="nav-link text-base md:text-lg hover:text-yellow-400" aria-label="Navigate to About section">About</a></li>
+        <li><a href="#projects" class="nav-link text-base md:text-lg hover:text-yellow-400" aria-label="Navigate to Projects section">Projects</a></li>
+        <li><a href="#achievements" class="nav-link text-base md:text-lg hover:text-yellow-400" aria-label="Navigate to Achievements section">Achievements</a></li>
+        <li><a href="#picture" class="nav-link text-base md:text-lg hover:text-yellow-400" aria-label="Navigate to My Picture section">My Picture</a></li>
+        <li><a href="#contact" class="nav-link text-base md:text-lg hover:text-yellow-400" aria-label="Navigate to Contact section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="p-8 md:p-12 text-center">
+    <h2 class="section-title text-3xl md:text-4xl text-white mb-6">About Me</h2>
+    <img src="IMAGE/LOGO.png" alt="MD Salman Shah" class="profile-img" onerror="console.error('Failed to load About image: IMAGE/LOGO.png'); this.src='https://via.placeholder.com/180'">
+    <p class="max-w-2xl mx-auto text-base md:text-lg leading-relaxed">I'm a passionate full-stack developer with expertise in crafting innovative web and mobile applications, leveraging databases, and harnessing the power of machine learning. Holding a Master’s in Computer Applications from Brainware University, I specialize in creating impactful solutions, such as my Mental Health Prediction project using AI & ML, driven by a commitment to technological excellence.</p>
+  </section>
+
+  <section id="projects" class="p-8 md:p-12">
+    <h2 class="section-title text-3xl md:text-4xl text-white mb-8 text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Medicine Reminder Application</h3>
+        <p class="text-gray-300 text-sm mb-3">A mobile app for scheduling and tracking medication reminders using Java and Android Studio.</p>
+        <a href="https://github.com/mdsalmanshah/medicine-reminder" target="_blank" class="action-button">View Details</a>
+      </div>
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Portfolio Website</h3>
+        <p class="text-gray-300 text-sm mb-3">A responsive personal portfolio website built using HTML, CSS, and Bootstrap for a modern UI.</p>
+        <a href="https://github.com/mdsalmanshah/portfolio" target="_blank" class="action-button">View Details</a>
+      </div>
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Spotify Clone</h3>
+        <p class="text-gray-300 text-sm mb-3">A music streaming web app replica built using HTML, CSS, and JavaScript for an interactive UI and smooth playback.</p>
+        <a href="https://github.com/mdsalmanshah/spotify-clone" target="_blank" class="action-button">View Details</a>
+      </div>
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Medical Management System</h3>
+        <p class="text-gray-300 text-sm mb-3">A web-based platform for managing medical records, appointments, and inventory, built with JavaScript, HTML, CSS, Bootstrap, jQuery, SQL, and PHP.</p>
+        <a href="https://github.com/mdsalmanshah/medical-management" target="_blank" class="action-button">View Details</a>
+      </div>
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Mental Health Prediction Using AI & ML</h3>
+        <p class="text-gray-300 text-sm mb-3">A web-based application utilizing machine learning to predict mental health conditions, built with HTML, CSS, JavaScript, Python, and Flask.</p>
+        <a href="https://github.com/mdsalmanshah/mental-health" target="_blank" class="action-button">View Details</a>
+      </div>
+      <div class="container-card">
+        <h3 class="text-xl font-semibold text-white mb-3">Weather Detection Application</h3>
+        <p class="text-gray-300 text-sm mb-3">A Flutter-based mobile app providing real-time weather updates with a sleek and interactive UI.</p>
+        <a href="https://github.com/mdsalmanshah/weather-app" target="_blank" class="action-button">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="p-8 md:p-12 text-center">
+    <h2 class="section-title text-3xl md:text-4xl text-white mb-8">Achievements</h2>
+    <div class="container-card">
+      <img src="IMAGE/ACHIEVEMENT.jpeg" alt="1st Best Paper Award" onerror="console.error('Failed to load Achievement image: IMAGE/ACHIEVEMENT.jpeg'); this.src='https://via.placeholder.com/400x200'">
+      <h3 class="text-xl font-semibold text-white mt-3 mb-2">1st Best Paper Award</h3>
+      <p class="text-gray-300 text-sm mb-3">Received at the International Conference on Sustainable Computing (ICSC) 2025 for outstanding research and presentation on advancing mental health prediction with machine learning.</p>
+      <img src="IMAGE/BOOK_COVER.jpg" alt="Research Book Cover" onerror="console.error('Failed to load Book Cover image: IMAGE/BOOK_COVER.jpg'); this.src='https://via.placeholder.com/400x200'">
+      <p class="text-base md:text-lg mt-3">Research Book: <a href="https://www.amazon.in/dp/B0F9T8PV6J" target="_blank" class="text-yellow-400 hover:underline">Advancing Mental Health Prediction with Machine Learning</a></p>
+    </div>
+  </section>
+
+  <section id="picture" class="p-8 md:p-12 text-center">
+    <h2 class="section-title text-3xl md:text-4xl text-white mb-8">My Picture</h2>
+    <div class="container-card">
+      <img src="IMAGE/PICTURE.jpeg" alt="MD Salman Shah" onerror="console.error('Failed to load Picture image: IMAGE/PICTURE.jpeg'); this.src='https://via.placeholder.com/400x200'">
+    </div>
+  </section>
+
+  <section id="contact" class="p-8 md:p-12 text-center">
+    <h2 class="section-title text-3xl md:text-4xl text-white mb-6">Contact Me</h2>
+    <p class="text-base md:text-lg mb-3">Email: <a href="mailto:salman91shah@gmail.com" class="text-yellow-400 hover:underline">salman91shah@gmail.com</a> | Phone: <a href="tel:9749681391" class="text-yellow-400 hover:underline">9749681391</a></p>
+    <p class="text-base md:text-lg mb-3">LinkedIn: <a href="https://www.linkedin.com/in/mdsalmanshah/" target="_blank" class="text-yellow-400 hover:underline">MD Salman Shah</a> | GitHub: <a href="https://github.com/mdsalmanshah" target="_blank" class="text-yellow-400 hover:underline">MD Salman Shah</a></p>
+    <a href="javascript:void(0)" class="ripple-button mt-4 px-6 py-2 bg-yellow-400 text-gray-900 font-semibold rounded-full" onclick="document.getElementById('contact-modal').classList.remove('hidden')">Get in Touch</a>
+    <div id="contact-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden flex items-center justify-center z-50">
+      <div class="bg-white p-6 rounded-lg max-w-md w-full">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Contact Me</h3>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-2 mb-3 border rounded" required>
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-2 mb-3 border rounded" required>
+          <textarea name="message" placeholder="Your Message" class="w-full p-2 mb-3 border rounded" rows="4" required></textarea>
+          <button type="submit" class="action-button w-full">Send Message</button>
+        </form>
+        <button onclick="document.getElementById('contact-modal').classList.add('hidden')" class="mt-3 text-gray-600 hover:underline">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-6 text-center bg-gray-900 bg-opacity-95">
+    <p class="text-gray-400 text-sm">© 2025 MD Salman Shah. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Custom cursor
+    const cursor = document.querySelector('.custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('.container-card, .nav-link, .action-button, .ripple-button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+    });
+
+    // Parallax background
+    gsap.to(".hero-bg", {
+      backgroundPosition: "50% 100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-bg",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    // Header animation
+    gsap.from("header", {
+      y: -80,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power4.out"
+    });
+
+    // Animate sections
+    const animateSection = (selector) => {
+      gsap.from(selector, {
+        y: 80,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: selector,
+          start: "top 85%",
+          toggleActions: "play none none reset"
+        }
+      });
+    };
+
+    animateSection("#about");
+    animateSection("#projects");
+    animateSection("#achievements");
+    animateSection("#picture");
+    animateSection("#contact");
+
+    // Card animations
+    gsap.from(".container-card", {
+      y: 60,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.1,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".container-card",
+        start: "top 90%",
+        toggleActions: "play none none reset"
+      }
+    });
+
+    // 3D tilt effect on cards
+    document.querySelectorAll(".container-card").forEach(card => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        gsap.to(card, {
+          rotationY: x / 40,
+          rotationX: -y / 40,
+          duration: 0.2,
+          ease: "power2.out"
+        });
+      });
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          rotationY: 0,
+          rotationX: 0,
+          duration: 0.4,
+          ease: "power2.out"
+        });
+      });
+    });
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        gsap.to(window, {
+          duration: 0.8,
+          scrollTo: { y: document.querySelector(this.getAttribute('href')).offsetTop - 60 },
+          ease: "power3.inOut"
+        });
+      });
+    });
+
+    // Debug image loading
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('error', () => console.error(`Image failed to load: ${img.src}`));
+      img.addEventListener('load', () => console.log(`Image loaded: ${img.src}`));
+    });
+
+    // Debug section rendering
+    document.querySelectorAll('section').forEach(section => {
+      console.log(`Section ${section.id} loaded`);
+    });
+  </script>
+</body>
+</html>
