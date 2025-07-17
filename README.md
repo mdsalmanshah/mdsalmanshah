@@ -1,10 +1,13 @@
+<!-- Animated Typing -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware+University;Full+Stack+Developer+%7C+ML+Researcher;Let’s+Build+Something+Amazing!&center=true&size=22" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+Salman+Shah!;MCA+Student+%40+Brainware+University;Full+Stack+Developer+%7C+ML+Enthusiast;Let's+Build+Amazing+Things!" alt="Typing SVG" />
 </p>
 
+<!-- Coding GIF -->
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="250" />
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="270" alt="Coding Animation" />
 </p>
+
 
 ---
 
