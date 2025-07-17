@@ -1,6 +1,6 @@
 <!-- 👑 Hero Section -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Salman+Shah!;Web+%26+Mobile+App+Developer+%7C+AI+%26+ML+Researcher;Clean+Code+%7C+Creative+UI%2FUX+%7C+Problem+Solver" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Salman+Shah!; Web+%26+Mobile+App+Developer+%7C+AI+%26+ML+Researcher;Clean+Code+%7C+Creative+UI%2FUX+%7C+Problem+Solver" alt="Typing Animation" />
 </p>
 
 <p align="center">
