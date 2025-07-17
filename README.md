@@ -1,5 +1,10 @@
+<!-- Hero Section -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware+University;Full+Stack+Developer+%7C+ML+Researcher;Let’s+Build+Something+Amazing!&center=true&size=22" />
+  <img src="https://img.freepik.com/free-vector/gradient-ui-ux-elements-background_23-2149056152.jpg?w=1380&t=st=1697356643~exp=1697357243~hmac=b6e2c5d3134cf3df75c2975460d4e8d52b808610c37c81e70f8e6a3cabc93fc5" alt="Hero Image" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;Web+%26+Mobile+App+Developer;AI+%7C+ML+Enthusiast+%7C+Tech+Explorer;Let’s+Build+Something+Amazing!&center=true&size=24&pause=1000" />
 </p>
 
 <p align="center">
@@ -8,64 +13,61 @@
 
 ---
 
-# 👋 Hey Everyone! Welcome to My GitHub
+# 👋 Hello World, I'm MD Salman Shah
 
-I'm MD Salman Shah, a passionate Full Stack Developer and AI/ML enthusiast currently pursuing MCA at Brainware University, Kolkata.
-
-- 💻 I build full-stack web and mobile apps
-- 🤖 I'm interested in solving real-world problems with AI
-- 🎨 I enjoy designing clean and responsive UIs
-- 📚 I conduct research on mental health prediction using ML
+🎓 MCA student @ Brainware University, Kolkata  
+💻 Passionate Web & Mobile Application Developer  
+🤖 AI/ML Researcher building real-world solutions  
+🎨 UI/UX Enthusiast with a love for clean, functional design  
+📍 Based in Kolkata, India
 
 ---
 
-## 🌐 Connect with Me
+## 🔗 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/mdsalmanshah)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mdsalmanshah-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/mdsalmanshah)  
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-yellow?style=for-the-badge)](https://mdsalmanshah.netlify.app)  
+[![GitHub](https://img.shields.io/badge/GitHub-mdsalmanshah-black?logo=github&style=for-the-badge)](https://github.com/mdsalmanshah)  
 [![Email](https://img.shields.io/badge/Email-salman91shah@gmail.com-red?style=for-the-badge)](mailto:salman91shah@gmail.com)
 
 ---
 
-## 🛠 Skills & Technologies
+## 🧠 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,cpp,python,html,css,js,react,flutter,dart,php,mysql,postgres,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=java,cpp,python,html,css,js,react,flutter,dart,php,mysql,postgres,git,vscode,figma" />
 </p>
 
 ---
 
-## 🧪 Research
+## 🚀 My Projects
 
-### 🧠 Mental Health Prediction using Machine Learning
-> Developed and published a machine learning model that predicts mental health issues with 85% accuracy based on survey data. Focused on optimizing model precision and real-world usability.
-
-🔗 [Read Full Research Paper](https://docs.google.com/document/d/1371_v6ReRLdbp3cVPB2Gigiu2TOB37tf/edit?usp=sharing)
-
-🛠 Tech used: Python · Scikit-learn · Flask · HTML · JS  
-📈 Accuracy Achieved: 85%  
-🎯 Application: Early mental health screening tool
-
----
-
-## 🚀 Featured Projects
-
-| Name | Description | Tech Stack |
-|------|-------------|------------|
-| [EEMS](https://myeems.netlify.app) | Full-stack employee expense management system | React, Redux Toolkit, PostgreSQL |
-| [Mental Health Prediction](https://github.com/mdsalmanshah/Mental-Health-Prediction) | AI model & web app to detect mental health risks | Flask, Python, HTML, CSS |
-| [Medical Management System](https://github.com/mdsalmanshah/medical-Management-System) | Hospital record & inventory system | PHP, MySQL |
-| [Portfolio Website](https://mdsalmanshah.netlify.app) | My personal portfolio | HTML, CSS, Bootstrap |
-| Weather App | Real-time weather updates | Flutter |
-| Medicine Reminder | Android app for medicine alerts | Java, Android Studio |
+| 🌟 Project | 💡 Description | 🛠 Tech |
+|-----------|----------------|--------|
+| [EEMS](https://myeems.netlify.app) | Expense tracker with user roles & analytics | React, Redux, PostgreSQL |
+| [Mental Health Prediction](https://github.com/mdsalmanshah/Mental-Health-Prediction) | ML model to predict mental health | Python, Flask |
+| [Medical Management System](https://github.com/mdsalmanshah/medical-Management-System) | Manage medical records | PHP, MySQL |
+| [Portfolio Website](https://mdsalmanshah.netlify.app) | Responsive personal site | HTML, CSS, Bootstrap |
+| Weather App | Real-time forecast | Flutter |
+| Medicine Reminder | Android med scheduler | Java, Android Studio |
 
 ---
 
-## 📊 GitHub Stats
+## 🧪 Research Spotlight
+
+### 🧠 Mental Health Prediction using ML
+> Published ML-based system to predict mental health outcomes from survey data. Achieved 85% model accuracy.
+
+📄 [View Research Paper](https://docs.google.com/document/d/1371_v6ReRLdbp3cVPB2Gigiu2TOB37tf/edit)  
+📊 Tools: Python · Scikit-learn · Flask · JS · HTML
+
+---
+
+## 📈 GitHub Insights
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mdsalmanshah&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdsalmanshah&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=mdsalmanshah&show_icons=true&theme=radical" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdsalmanshah&layout=compact&theme=radical" height="160" />
 </p>
 
 ---
@@ -73,7 +75,7 @@ I'm MD Salman Shah, a passionate Full Stack Developer and AI/ML enthusiast curre
 ## 🔥 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=mdsalmanshah&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=mdsalmanshah&theme=radical" />
 </p>
 
 ---
@@ -86,5 +88,6 @@ I'm MD Salman Shah, a passionate Full Stack Developer and AI/ML enthusiast curre
 
 ---
 
-⭐ If you find my work useful, please give it a ⭐ and follow!
-
+<p align="center">
+  ⭐ If you like my work, give me a star — it motivates me!  
+</p>
