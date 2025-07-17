@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware;Web Full+Stack+Developer+ Mobile Applicaton Developer;Let's+Build+Amazing+Things!&center=true&size=25" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware;Full+Stack+Developer;Let's+Build+Amazing+Things!&center=true&size=25" />
 </p>
 
 <p align="center">
