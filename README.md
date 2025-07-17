@@ -1,8 +1,7 @@
 <!-- 👑 Hero Section -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mdsalmanshah&label=Profile+Views&color=blue&style=flat" alt="mdsalmanshah" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Salman+Shah!;Web+%26+Mobile+App+Developer+%7C+AI+%26+ML+Researcher;Clean+Code+%7C+Creative+UI%2FUX+%7C+Problem+Solver" alt="Typing Animation" />
 </p>
-
 
 <p align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" alt="Coding Animation" />
@@ -44,8 +43,8 @@ I'm <strong>MD Salman Shah</strong> — a highly motivated Full Stack Developer 
 </p>
 
 🧠 Other Key Skills:
-- Strong in DSA, OOPs, and system design
-- Excellent in teamwork, problem-solving & communication
+- Strong in DSA, OOPs, and system design  
+- Excellent in teamwork, problem-solving & communication  
 - Experience with version control, responsive design, and clean architecture
 
 ---
