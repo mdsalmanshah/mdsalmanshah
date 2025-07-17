@@ -1,64 +1,71 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware;Full+Stack+Developer;ML+Enthusiast;Let's+Build+Amazing+Things!&center=true&size=25" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=Hi,+I'm+Salman+Shah!;MCA+Student+@Brainware+University;Full+Stack+Developer+%7C+ML+Researcher;Let’s+Build+Something+Amazing!&center=true&size=22" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="270" alt="Coder Animation" />
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="250" />
 </p>
 
 ---
 
-# 👋 Hello, I'm MD Salman Shah
+# 👋 Hey Everyone! Welcome to My GitHub
 
-🎓 Pursuing MCA at Brainware University, Kolkata  
-🧠 Passionate about Full Stack Development, UI/UX, and Machine Learning  
-🚀 I build responsive web/mobile apps and solve real-world problems  
-📍 Based in Kolkata, India
+I'm MD Salman Shah, a passionate Full Stack Developer and AI/ML enthusiast currently pursuing MCA at Brainware University, Kolkata.
 
----
-
-## 💼 Connect with Me
-
-📫 Email: [salman91shah@gmail.com](mailto:salman91shah@gmail.com)  
-🌐 Portfolio: [mdsalmanshah.netlify.app](https://mdsalmanshah.netlify.app)  
-🔗 LinkedIn: [@mdsalmanshah](https://www.linkedin.com/in/mdsalmanshah)  
-🐙 GitHub: [@mdsalmanshah](https://github.com/mdsalmanshah)
+- 💻 I build full-stack web and mobile apps
+- 🤖 I'm interested in solving real-world problems with AI
+- 🎨 I enjoy designing clean and responsive UIs
+- 📚 I conduct research on mental health prediction using ML
 
 ---
 
-## 🛠 Tech Stack & Tools
+## 🌐 Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/mdsalmanshah)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-yellow?style=for-the-badge)](https://mdsalmanshah.netlify.app)  
+[![Email](https://img.shields.io/badge/Email-salman91shah@gmail.com-red?style=for-the-badge)](mailto:salman91shah@gmail.com)
+
+---
+
+## 🛠 Skills & Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,cpp,python,c,html,css,js,react,flutter,dart,php,mysql,postgres,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=java,cpp,python,html,css,js,react,flutter,dart,php,mysql,postgres,git,vscode" />
 </p>
-
-- 💻 Programming: Java, C++, C, Dart, JavaScript  
-- 🌐 Web: HTML, CSS, React.js, Bootstrap, PHP  
-- 📱 Mobile: Flutter, Android (Java)  
-- 🧠 AI/ML: Python, Flask, Pandas, Scikit-learn  
-- 🗄️ Databases: MySQL, PostgreSQL  
-- ⚙️ Tools: GitHub, VS Code, Figma, Netlify
 
 ---
 
-## 🚀 Projects
+## 🧪 Research
 
-| Project | Tech Stack | Description |
-|--------|-------------|-------------|
-| [Enterprise Expense Management System](https://myeems.netlify.app) | React, Redux, PostgreSQL | Full-stack role-based expense tracker |
-| [Mental Health Prediction](https://github.com/mdsalmanshah/Mental-Health-Prediction) | Python, Flask, ML | AI-driven health analyzer (85% accuracy) |
-| [Medical Management System](https://github.com/mdsalmanshah/medical-Management-System) | PHP, MySQL, jQuery | Web app for managing medical data |
-| [Portfolio Website](https://mdsalmanshah.netlify.app) | HTML, CSS, Bootstrap | Personal responsive portfolio |
-| Weather App | Flutter | Live weather forecast in a user-friendly UI |
-| Medicine Reminder | Android (Java) | Mobile app for scheduling medication alerts |
+### 🧠 Mental Health Prediction using Machine Learning
+> Developed and published a machine learning model that predicts mental health issues with 85% accuracy based on survey data. Focused on optimizing model precision and real-world usability.
+
+🔗 [Read Full Research Paper](https://docs.google.com/document/d/1371_v6ReRLdbp3cVPB2Gigiu2TOB37tf/edit?usp=sharing)
+
+🛠 Tech used: Python · Scikit-learn · Flask · HTML · JS  
+📈 Accuracy Achieved: 85%  
+🎯 Application: Early mental health screening tool
+
+---
+
+## 🚀 Featured Projects
+
+| Name | Description | Tech Stack |
+|------|-------------|------------|
+| [EEMS](https://myeems.netlify.app) | Full-stack employee expense management system | React, Redux Toolkit, PostgreSQL |
+| [Mental Health Prediction](https://github.com/mdsalmanshah/Mental-Health-Prediction) | AI model & web app to detect mental health risks | Flask, Python, HTML, CSS |
+| [Medical Management System](https://github.com/mdsalmanshah/medical-Management-System) | Hospital record & inventory system | PHP, MySQL |
+| [Portfolio Website](https://mdsalmanshah.netlify.app) | My personal portfolio | HTML, CSS, Bootstrap |
+| Weather App | Real-time weather updates | Flutter |
+| Medicine Reminder | Android app for medicine alerts | Java, Android Studio |
 
 ---
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mdsalmanshah&show_icons=true&theme=tokyonight" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdsalmanshah&layout=compact&theme=tokyonight" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mdsalmanshah&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdsalmanshah&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
 ---
@@ -66,18 +73,18 @@
 ## 🔥 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=mdsalmanshah&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=mdsalmanshah&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
 ## 🏆 Certifications
 
-- Java Full Stack Development – Zidio Development (Aug 2024)  
-- Java (HackerRank) – [Certificate](https://www.hackerrank.com/certificates/19bf212f39ef)  
-- Android Development, C Programming – Proficient in pointers, logic & UI design
+- ✅ Java Full Stack Development – Zidio (Aug 2024)  
+- ✅ Java – HackerRank (Aug 2024)  
+- ✅ Android Development, C Programming
 
 ---
 
-⭐ _If you like my work, please give a star ⭐ and follow 🙌_
+⭐ If you find my work useful, please give it a ⭐ and follow!
 
